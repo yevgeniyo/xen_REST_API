@@ -8,18 +8,10 @@ from xen_sdk import XenStatistics
 
 auth = HTTPBasicAuth()
 
-# @auth.get_password
-# def get_password(username):
-#     if username == 'root':
-#         password = 'incapsula'
-#         return password
-#     return None
-
-
 
 app = Flask(__name__)
 username = 'root'
-password = 'incapsula'
+password = '' # put here your xenservers password 
 
 
 
