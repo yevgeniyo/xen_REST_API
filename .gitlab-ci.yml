@@ -1,7 +1,0 @@
-Upload code to S3:
-  only:
-    - /^master$/
-  script:
-    - tar -czvf ipc_controller_$CI_BUILD_ID.tar.gz *
-    - echo "pFZQWKfQrcC625f2u4bQEfDRmZqfY6" | gpg --batch --no-tty --yes --passphrase-fd 0 --symmetric -o ipc_controller_$CI_BUILD_ID.tar.gz.gpg ipc_controller_$CI_BUILD_ID.tar.gz
-    - aws s3 cp ipc_controller_$CI_BUILD_ID.tar.gz.gpg s3://incap-deploy/ipc_controller/ipc_controller_$CI_BUILD_ID.tar.gz.gpg
