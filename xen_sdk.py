@@ -587,18 +587,3 @@ class XenStatistics:
 
         return self.response
 
-# x = XenSession("http://10.200.100.184", "root", "incapsula")
-# pprint(x.stop_vm("Official_test"))
-# pprint(x.start_vm("Official_test"))
-# pprint(x.list_of_vms())
-# pprint(x.mod_cpu("xenserver0", "Official_test", 3))
-# pprint(x.mod_ram("xenserver0", "Official_test", 3))
-# pprint(x.create_vm("xenserver0", "crrap", 2, 2, 20,  1, 'eth0', 'eth1'))
-
-#
-# y = CreateVM("10.200.100.184", "root", "incapsula", "xenserver0", "new_one", 2, "eth0", "eth1", 2, 2, 17)
-# pprint(y.main())
-
-#z = XenStatistics("http://10.200.100.184", "xenserver0", "root", "incapsula")
-#pprint(z.get_ram_stat())
-
